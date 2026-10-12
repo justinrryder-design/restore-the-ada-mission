@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boycott of ADA - Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description" content="A public tracker for the Notice of Boycott of the American Diabetes Association: why the boycott exists, what roles signatories hold inside and outside the ADA, open questions, and links to all coverage and primary sources.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Boycott of the American Diabetes Association — Tracker">
+<meta property="og:description" content="1,178 signatories. What they hold within the ADA, what they lead outside it, and the work now suspended. With 39 links to coverage and primary sources.">
+<meta property="og:site_name" content="Boycott of ADA — Tracker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Boycott of the American Diabetes Association — Tracker">
+<meta name="twitter:description" content="1,178 signatories. What they hold within the ADA, what they lead outside it, and the work now suspended.">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<style>
+:root{
+  --bg:#fdfdfb; --surface:#ffffff; --line:#c9cdd4; --line-soft:#e4e7ec;
+  --ink:#14181d; --ink-2:#2b333d; --ink-3:#4d5762;
+  --accent:#16457e; --accent-deep:#0e2f58; --accent-soft:#e8eef7;
+  --amber:#7d5700; --amber-soft:#faf1dc;
+  --good:#16457e; --good-soft:#e8eef7;
+  --warn:#7d5700; --warn-soft:#faf1dc;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#101318; --surface:#181d24; --line:#3b434e; --line-soft:#272d36;
+    --ink:#f4f6f8; --ink-2:#dbe0e6; --ink-3:#a9b2bd;
+    --accent:#8fb8e8; --accent-deep:#6f9fd6; --accent-soft:#17263a;
+    --amber:#e5bd6a; --amber-soft:#2a2314;
+    --good:#8fb8e8; --good-soft:#17263a;
+    --warn:#e5bd6a; --warn-soft:#2a2314;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101318; --surface:#181d24; --line:#3b434e; --line-soft:#272d36;
+  --ink:#f4f6f8; --ink-2:#dbe0e6; --ink-3:#a9b2bd;
+  --accent:#8fb8e8; --accent-deep:#6f9fd6; --accent-soft:#17263a;
+  --amber:#e5bd6a; --amber-soft:#2a2314;
+  --good:#8fb8e8; --good-soft:#17263a;
+  --warn:#e5bd6a; --warn-soft:#2a2314;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+:focus-visible{outline:3px solid var(--accent); outline-offset:2px; border-radius:3px}
+h2[id], .hero[id], .ask[id]{scroll-margin-top:84px}
+h2[id]{
+  border-top:1px solid var(--line); padding-top:34px; margin-top:54px
+}
+.jump{position:fixed; top:18px; left:18px; z-index:60}
+.jump summary{
+  list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:9px;
+  background:var(--surface); border:1.5px solid var(--accent); color:var(--accent);
+  font-family:var(--sans); font-weight:600; font-size:15px;
+  padding:10px 16px; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,.09)
+}
+.jump summary::-webkit-details-marker{display:none}
+.jump summary::after{content:"\25BE"; font-size:12px; line-height:1}
+.jump[open] summary::after{content:"\25B4"}
+.jump nav{
+  position:absolute; top:calc(100% + 8px); left:0; min-width:262px;
+  background:var(--surface); border:1px solid var(--line); border-radius:10px;
+  box-shadow:0 8px 28px rgba(0,0,0,.16); padding:7px; max-height:72vh; overflow:auto
+}
+.jump nav a{
+  display:block; padding:9px 12px; border-radius:6px; text-decoration:none;
+  color:var(--ink); font-size:15px; line-height:1.35
+}
+.jump nav a:hover, .jump nav a:focus{background:var(--accent-soft); color:var(--accent)}
+@media (max-width:1180px){
+  .jump{position:sticky; top:0; left:0; margin:0 -20px; padding:10px 20px;
+    background:var(--bg); border-bottom:1px solid var(--line)}
+  .jump nav{left:20px; right:20px; min-width:0}
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:17.5px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:820px; margin:0 auto; padding:0 20px 80px}
+
+header{padding:56px 0 32px; border-bottom:1px solid var(--line)}
+.eyebrow{
+  font-size:12px; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--accent); font-weight:600; margin:0 0 14px
+}
+h1{
+  font-family:var(--serif); font-weight:600; font-size:clamp(34px,7.4vw,54px);
+  line-height:1.1; margin:0 auto 20px; letter-spacing:-.015em;
+  color:var(--accent); text-wrap:balance; text-align:center; max-width:18ch
+}
+.lede{font-size:clamp(17.5px,2.6vw,20px); color:var(--ink-2); margin:0; max-width:60ch; font-weight:450}
+.stamp{margin-top:0; font-size:15px; color:var(--ink-3); text-align:center}
+
+h2{
+  font-family:var(--serif); font-weight:600; font-size:25px;
+  margin:52px 0 6px; letter-spacing:-.005em
+}
+h2 + .sub{margin:0 0 20px; color:var(--ink-3); font-size:15.5px; font-weight:500}
+p{max-width:66ch}
+
+.hero{
+  background:var(--accent-deep); border-radius:14px; padding:24px 22px; margin:30px 0 0;
+  color:#fff
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .hero{background:#17263a; border:1px solid var(--line)}
+}
+:root[data-theme="dark"] .hero{background:#17263a; border:1px solid var(--line)}
+.hero .htitle{
+  font-size:12.5px; letter-spacing:.13em; text-transform:uppercase;
+  font-weight:600; opacity:.82; margin:0 0 20px
+}
+.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:18px}
+.hero .card{background:none; border:none; padding:0; border-radius:0}
+.hero .card + .card{border-top:1px solid rgba(255,255,255,.22); padding-top:20px}
+@media (min-width:600px){
+  .hero .card + .card{border-top:none; border-left:1px solid rgba(255,255,255,.22); padding-top:0; padding-left:22px}
+}
+.bignum{
+  font-family:var(--serif); font-size:clamp(54px,14vw,86px); font-weight:600;
+  line-height:.95; margin:0; color:#fff; letter-spacing:-.02em
+}
+.bigcap{font-size:clamp(16px,2.6vw,19px); color:rgba(255,255,255,.9); margin:8px 0 0}
+.card .num{display:block}
+.card .cap{display:block}
+
+.callout{
+  background:var(--accent-soft); border-left:3px solid var(--accent);
+  border-radius:0 8px 8px 0; padding:16px 18px; margin:26px 0
+}
+.disclaimer{font-size:14.5px; line-height:1.55; color:var(--ink-2)}
+.disclaimer p{max-width:72ch; margin:0}
+.disclaimer p + p{margin-top:9px}
+.dlabel{
+  font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+  font-size:12.5px; color:var(--accent); margin-right:5px
+}
+.callout p{margin:0; max-width:62ch}
+.callout p + p{margin-top:12px}
+.callout strong{font-weight:600}
+
+.scroll{overflow-x:auto; -webkit-overflow-scrolling:touch; margin:18px 0}
+table{width:100%; border-collapse:collapse; font-size:16.5px; min-width:340px}
+caption{text-align:left; font-size:14.5px; color:var(--ink-3); padding-bottom:8px}
+th{
+  text-align:left; font-weight:600; font-size:12.5px; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--ink-2);
+  padding:0 10px 8px 0; border-bottom:1px solid var(--line)
+}
+th.n,td.n{text-align:right; padding-right:0; white-space:nowrap}
+td{padding:9px 10px 9px 0; border-bottom:1px solid var(--line-soft); vertical-align:top; color:var(--ink)}
+tbody tr:last-child td{border-bottom:none}
+td.n{font-variant-numeric:tabular-nums; font-weight:500}
+
+.bar{height:5px; border-radius:3px; background:var(--line-soft); overflow:hidden; margin-top:7px}
+.bar i{display:block; height:100%; background:var(--accent); border-radius:3px}
+.bar{height:7px}
+
+.prog{display:flex; height:26px; border-radius:6px; overflow:hidden; margin:18px 0 10px; border:1px solid var(--line)}
+.prog span{display:block; height:100%}
+.legend{display:flex; flex-wrap:wrap; gap:8px 18px; font-size:15px; color:var(--ink-2); margin-bottom:8px}
+.legend b{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:6px; vertical-align:middle}
+
+.empty{
+  background:var(--surface); border:1px dashed var(--line); border-radius:9px;
+  padding:20px 22px; color:var(--ink-3); font-size:16.5px; margin:18px 0 0; max-width:none
+}
+.csub{
+  font-family:var(--sans); font-size:13px; font-weight:700; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--accent); margin:30px 0 0;
+  padding-bottom:7px; border-bottom:2px solid var(--accent-soft)
+}
+.srcs{list-style:none; padding:0; margin:10px 0 0}
+.srcs li{padding:11px 0; border-bottom:1px solid var(--line-soft)}
+.srcs li:last-child{border-bottom:none}
+.srcs a{font-weight:500}
+.srcs .meta{display:block; font-size:14.5px; color:var(--ink-3); margin-top:3px}
+.recap{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:18px;
+  border:1px solid var(--line); border-top:3px solid var(--accent);
+  border-radius:0 0 10px 10px; padding:20px 22px; margin:26px 0
+}
+.recap .r{min-width:0}
+.recap .rn{
+  font-family:var(--serif); font-size:clamp(23px,4.2vw,29px); font-weight:600;
+  line-height:1; color:var(--accent); display:block
+}
+.recap .rc{display:block; font-size:14px; color:var(--ink-2); margin-top:6px; line-height:1.4}
+.chal{list-style:none; padding:0; margin:18px 0 0}
+.chal li{
+  border-left:3px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; padding:14px 18px; margin-bottom:12px
+}
+.chal h3{margin:0 0 6px; font-size:16.5px; font-weight:600; color:var(--ink)}
+.chal p{margin:0; font-size:15.5px; color:var(--ink-2); max-width:68ch}
+.log{list-style:none; padding:0; margin:18px 0 0}
+.log li{border-left:2px solid var(--line); padding:0 0 22px 18px; position:relative}
+.log li:last-child{padding-bottom:0}
+.log li::before{
+  content:""; position:absolute; left:-5px; top:7px; width:8px; height:8px;
+  border-radius:50%; background:var(--accent); border:2px solid var(--bg)
+}
+.log .when{font-size:13.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); font-weight:600}
+.log .what{margin:4px 0 0; font-size:16.5px}
+
+.ask{background:var(--good-soft); border:1px solid var(--good); border-radius:10px; padding:20px 22px; margin:26px 0}
+.ask h3{margin:0 0 10px; font-family:var(--serif); font-size:20.5px; font-weight:600}
+.ask ul{margin:12px 0 0; padding-left:20px; font-size:16.5px}
+.ask li{margin-bottom:5px}
+
+.caveat{
+  background:var(--warn-soft); border:1px solid var(--line); border-left:3px solid var(--ink);
+  border-radius:0 10px 10px 0; padding:16px 18px; margin:26px 0
+}
+.caveat h3{margin:0 0 8px; font-size:16.5px; font-weight:600; letter-spacing:.02em; color:var(--ink)}
+.caveat p{margin:0; max-width:62ch}
+
+a{color:var(--accent); text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1.5px}
+a:hover{text-decoration-thickness:2px}
+.btn{
+  display:inline-block; background:var(--accent-deep); color:#fff; text-decoration:none;
+  font-weight:600; font-size:16.5px; padding:12px 22px; border-radius:7px; margin-top:6px
+}
+.btn-lg{font-size:clamp(17.5px,2.6vw,21px); padding:15px 30px; border-radius:9px; margin-top:0}
+.cta{text-align:center; margin:26px 0 18px}
+.btn:hover{opacity:.9; text-decoration:none}
+.summary{
+  max-width:64ch; margin:24px auto 18px; padding:20px 22px;
+  background:var(--accent-soft); border:1px solid var(--line); border-radius:11px
+}
+.summary p{margin:0; font-size:16.5px; line-height:1.6; color:var(--ink); max-width:none}
+.summary .more{margin-top:12px; font-weight:600}
+.coc{margin:20px 0 4px; padding:0}
+.coc figcaption{
+  font-size:12.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--ink-3); margin-bottom:12px
+}
+.cocrow{display:grid; gap:14px}
+@media (min-width:720px){.cocrow{grid-template-columns:1fr 1fr}}
+.cocbox{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:14px 16px}
+.cocbox.cocnew{border-color:var(--amber); border-width:2px}
+.cocwhen{
+  margin:0 0 8px; font-size:13px; font-weight:700; color:var(--ink-2);
+  letter-spacing:.03em; max-width:none
+}
+.cocnew .cocwhen{color:var(--amber)}
+.coc blockquote{
+  margin:0; font-size:15px; line-height:1.55; color:var(--ink-2);
+  font-family:var(--serif)
+}
+.coc mark{
+  background:var(--amber-soft); color:var(--ink); font-weight:700;
+  padding:1px 4px; border-radius:3px; box-decoration-break:clone;
+  -webkit-box-decoration-break:clone; border-bottom:2px solid var(--amber)
+}
+.qa h3{
+  font-family:var(--serif); font-size:19.5px; font-weight:600; margin:28px 0 8px; color:var(--ink)
+}
+.qa > h3:first-child{margin-top:18px}
+.qa p{margin:0 0 10px}
+.tmpl{
+  margin:14px 0 8px; padding:16px 18px; background:var(--surface);
+  border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:0 9px 9px 0
+}
+.tmpl p{
+  margin:0; font-family:var(--serif); font-size:16.5px; line-height:1.6; color:var(--ink)
+}
+.tmpl .slot{
+  background:var(--amber-soft); border-bottom:2px solid var(--amber);
+  padding:1px 4px; border-radius:3px; font-family:var(--sans); font-size:15px; font-weight:600
+}
+.tmplnote{display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; margin:0 0 4px}
+.copy{
+  font-family:var(--sans); font-size:15px; font-weight:600; cursor:pointer;
+  background:var(--accent-soft); color:var(--accent); border:1.5px solid var(--accent);
+  padding:8px 16px; border-radius:7px
+}
+.copy:hover{background:var(--accent); color:var(--surface)}
+.copy[data-done]{background:var(--accent); color:var(--surface)}
+.tmplnote .hint{font-size:14.5px; color:var(--ink-3); flex:1 1 16ch; min-width:0}
+.why p{margin:0 0 14px}
+.demands{margin:14px 0 0; padding-left:22px}
+.demands li{margin-bottom:7px; max-width:62ch}
+.pull{
+  font-family:var(--serif); font-size:21px; line-height:1.45; color:var(--ink);
+  border-left:3px solid var(--accent); padding:4px 0 4px 20px; margin:28px 0; max-width:60ch
+}
+.topbanner{
+  background:var(--amber-soft); border:1px solid var(--amber); border-left:4px solid var(--amber);
+  border-radius:0 11px 11px 0; padding:18px 20px; margin:28px 0 0
+}
+.topbanner .tblead{
+  margin:0 0 13px; font-size:16.5px; line-height:1.55; font-weight:600;
+  color:var(--ink); max-width:70ch
+}
+.topbanner .tmpl{
+  margin:0; background:var(--surface); border:1px solid var(--line);
+  border-left:3px solid var(--amber); border-radius:0 9px 9px 0
+}
+.topbanner .tmplnote{margin:13px 0 0}
+@media (max-width:1180px){.topbanner{margin-top:18px}}
+
+@media print{
+  :root{--bg:#fff; --surface:#fff; --ink:#000; --ink-2:#1a1a1a; --ink-3:#404040;
+         --accent:#16457e; --accent-deep:#0e2f58; --line:#999; --line-soft:#ccc;
+         --amber:#7d5700; --amber-soft:#f0f0f0}
+  body{font-size:11pt; line-height:1.45}
+  .wrap{max-width:none; padding:0}
+  .jump{display:none !important}
+  .copy{display:none !important}
+  .tmplnote .hint{font-size:9pt}
+  .tmpl{border:1pt solid #000; border-left:3pt solid #000}
+  .tmpl .slot{background:#f0f0f0; border-bottom:1pt solid #000}
+  .hero{background:#fff !important; color:#000 !important; border:1.5pt solid #000; padding:14pt}
+  .bignum, .bigcap{color:#000 !important}
+  .cocrow{grid-template-columns:1fr 1fr}
+  h2[id]{page-break-after:avoid; break-after:avoid}
+  .chal li, .srcs li, .log li, .coc, .tmpl, .qa h3{page-break-inside:avoid; break-inside:avoid}
+  .qa h3{page-break-after:avoid; break-after:avoid}
+  a{color:#000; text-decoration:underline}
+  .srcs a::after{content:" (" attr(href) ")"; font-size:8pt; color:#444; word-break:break-all}
+  footer{border-top:1pt solid #000}
+}
+footer{margin-top:60px; padding-top:22px; border-top:1px solid var(--line); font-size:14.5px; line-height:1.55; color:var(--ink-2)}
+footer p{max-width:66ch; margin:0 0 9px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<details class="jump">
+  <summary>Jump to section</summary>
+  <nav>
+    <a href="#numbers">Where things stand</a>
+    <a href="#updates">Updates</a>
+    <a href="#why">Why this list exists</a>
+    <a href="#suspends">What the boycott actually suspends</a>
+    <a href="#ada-roles">ADA roles documented so far</a>
+    <a href="#outside">Standing outside the ADA</a>
+    <a href="#directory">How complete is the ADA directory?</a>
+    <a href="#correct">Correct your own entry</a>
+    <a href="#faq">Questions signatories are asking</a>
+    <a href="#challenges">Open challenges</a>
+    <a href="#coverage">Coverage and primary sources</a>
+  </nav>
+</details>
+
+<aside class="topbanner" aria-label="Abstract review requests">
+  <p class="tblead">If you receive requests to review abstracts for the ADA Scientific Sessions, please encourage people to respond along the lines of:</p>
+  <blockquote class="tmpl" id="banner-tmpl">
+    <p>Thank you for thinking of me. However, I am supporting the boycott of the American Diabetes Association. I am unable to <span class="slot">[participate in activity]</span> until the ADA leadership agrees to restore full editorial independence of <em>Diabetes Care</em>, the board of directors invites a fully independent review of events of June 5th, ADA leadership takes responsibility for their role in the removal of professional members by armed security, and the organization commits to a policy of freedom of expression and scientific inquiry.</p>
+  </blockquote>
+  <p class="tmplnote"><button type="button" class="copy" data-for="banner-tmpl">Copy this text</button> <span class="hint">Replace the bracketed phrase with the specific request &mdash; review abstracts, review this manuscript, serve on the panel, speak at the session.</span></p>
+</aside>
+
+<header>
+  <h1>Boycott of the American Diabetes Association &mdash; Tracker</h1>
+  <p class="lede">1,178 people have signed the Notice of Boycott of the American Diabetes Association. This page reports, in aggregate, what they hold within the ADA and what they lead outside it &mdash; and what the Association loses for as long as the boycott holds.</p>
+  <p class="cta"><a class="btn btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLScDBQ6ZsqIgm8nnoimIwyS5aIdxguCOGrsBSD4bSOddIdv5yA/viewform">Read and sign the Notice of Boycott</a></p>
+  <div class="summary">
+    <p>At the ADA's 2026 Scientific Sessions in New Orleans, five senior physician-scientists were removed from the meeting and banned from it for handing out a <em>Diabetes Care</em> editorial &mdash; published in the ADA's own journal &mdash; about federal cuts to biomedical research. The Association said they were removed for disruptive conduct; video and witness accounts do not support that, and the day after the removals the ADA added the words &ldquo;such as protesting&rdquo; to the conference code of conduct it had cited. In July, ADA leadership blocked publication of an editorial and seven opinion pieces that <em>Diabetes Care</em> had already accepted about the events. In September an internal review &mdash; reporting to the same Board whose conduct was in question &mdash; cleared the Association, announced in a press release the Board later conceded it had issued before reading the findings. We are withdrawing our work from the ADA until its Board permits a genuinely independent, externally led review of the Association's structure and governance.</p>
+    <p class="more"><a href="#why">Read the full background and timeline &rarr;</a></p>
+  </div>
+  <p class="stamp">Last updated 11 October 2026</p>
+</header>
+
+<div class="hero" id="numbers">
+  <p class="htitle">Where things stand</p>
+  <p class="bignum">1,178</p>
+  <p class="bigcap">people have signed the Notice of Boycott</p>
+
+  </div>
+
+<div class="callout disclaimer">
+  <p><span class="dlabel">Disclaimer:</span>Every number on this page is a minimum, not an estimate. A signatory is counted in a category only where their own words, a public source, or the ADA member directory put them there. Roles that nobody wrote down are counted nowhere.</p>
+</div>
+
+<h2 id="updates" style="border-top:none; padding-top:0">Updates</h2>
+
+<ul class="log">
+  <li>
+    <p class="when">1 October 2026 &mdash; the count is now rebuilt daily, and corrected</p>
+    <p class="what">Figures are now recomputed each morning directly from the two signature sheets. That recount corrected an error: the previous total of 1,195 added the professional and public lists together without removing the people who had signed both. Fifty-two people were counted twice, and the total now also excludes entries no longer present on the sheets. The figure shown above therefore dropped by roughly thirty &mdash; because the old number was wrong, not because anyone withdrew. Role counts rose at the same time: more than two hundred people have signed since the annotated dataset was built, and their stated roles are now counted.</p>
+  </li>
+  <li>
+    <p class="when">28 September 2026 &mdash; the governing bylaws are still not public</p>
+    <p class="what">The ADA's current bylaws do not appear anywhere on its public site. The Association posts its <a href="https://diabetes.org/about-us/board-of-directors">Board of Directors</a> and its <a href="https://diabetes.org/about-us/previous-reports-and-financials">Form 990 filings</a>, but not the document that sets out how it governs itself &mdash; who may suspend or ban a member, under what procedure, and with what right of appeal. Peer societies publish theirs: <a href="https://www.adces.org/about-us/leadership---governance">ADCES</a> and <a href="https://pro.aace.com/about/governing-documents">AACE</a> both post current bylaws openly. Until the ADA does the same, no member can check whether what happened in New Orleans followed the Association's own rules. If you hold a copy, or have requested one and received a reply, please send it.</p>
+  </li>
+  <li>
+    <p class="when">28 September 2026 &mdash; the code of conduct was edited the day after the removals</p>
+    <p class="what">The Internet Archive's record of the ADA conference policies page shows &ldquo;protesting&rdquo; was added to the prohibited-conduct list on 6 June 2026 &mdash; one day after the five were removed on 5 June. The removals were justified by reference to the attendee code of conduct. <a href="https://web.archive.org/web/changes/https://professional.diabetes.org/scientific-sessions/ada-conference-policies">Compare the archived versions.</a></p>
+  </li>
+  <li>
+    <p class="when">28 September 2026 &mdash; source list expanded</p>
+    <p class="what">The coverage section now carries 39 links, grouped by period and by theme, and includes primary documents: the original <em>Diabetes Care</em> editorial, the eight blocked articles on Zenodo, the ADA's press release and the CEO's op-ed, the video apology, and statements from <em>Diabetologia</em> and <em>The Lancet Diabetes &amp; Endocrinology</em>.</p>
+  </li>
+</ul>
+
+<h2 id="why">Why this list exists</h2>
+<p class="sub">Background, in the words of the Notice of Boycott</p>
+
+<div class="why">
+<p>At the 2026 ADA Scientific Sessions on 5 June, five senior physician-scientists were removed from the meeting and banned from it for handing out a <em>Diabetes Care</em> editorial about federal research-funding cuts (<a href="https://www.washingtonpost.com/health/2026/06/05/diabetes-researchers-ousted-conference-after-criticizing-trump/">Washington Post</a>). ADA leadership said they had disrupted the meeting; <a href="https://www.medpagetoday.com/special-reports/exclusives/121657">video published by MedPage Today</a> and witness accounts say otherwise, and the Foundation for Individual Rights and Expression <a href="https://www.fire.org/news/american-diabetes-association-ejects-researchers-conference-sharing-editorial-its-own-journal">noted</a> that no evidence supported the disruption claim. The CEO <a href="https://www.statnews.com/2026/06/10/ada-annual-convention-ceo-apology-protester-removal/">apologised five days later</a> and promised a review.</p>
+
+<p>On 13 July the ADA blocked publication of an editorial and seven opinion pieces that <em>Diabetes Care</em> had already accepted on what happened in New Orleans (<a href="https://www.statnews.com/2026/07/16/american-diabetes-association-annual-conference-controversy-continues/">STAT</a>). The authors <a href="https://zenodo.org/records/21300053">posted all eight to a preprint server</a> instead, where they can still be read.</p>
+
+<p>Senior figures <a href="https://www.medpagetoday.com/special-reports/exclusives/121657">resigned</a> or issued statements. Every living Banting Medalist and every member of the ADA Emeritus Council wrote to the Board. More than 8,000 people signed <a href="https://www.change.org/p/an-open-letter-to-the-american-diabetes-association-shame-on-you">a Change.org petition</a>. On 21 July, current and former ADA members, many of them serving editors, committee members and volunteer leaders, sent the Board four demands: removal of the CEO and others involved, a genuinely independent investigation by people with no prior ADA relationship, an unconditional public apology to the five, and restoration of editorial independence at <em>Diabetes Care</em> (<a href="https://www.statnews.com/2026/07/28/american-diabetes-association-fallout-researchers-expulsion/">STAT</a>).</p>
+
+<p>On 1 September the ADA issued <a href="https://diabetes.org/newsroom/press-releases/american-diabetes-association-audit-and-governance-committee-releases">a press release</a> saying its own Audit and Governance Committee, which reports to the Board under scrutiny, had cleared the Association's conduct, timed alongside <a href="https://www.statnews.com/2026/09/01/american-diabetes-association-june-conference-independent-review/">an op-ed from the CEO</a> defending those conclusions. <a href="https://www.statnews.com/2026/09/01/ada-members-review-june-expulsion-denies-censoring-opinions-calling-new-orleans-police/">STAT reported</a> the same day that the findings were still being sent to the Board for action. Within a week the Board put out a second statement conceding it had not yet read the committee's findings.</p>
+
+<p>The boycott took effect on 9 September 2026 and holds until the Board permits a review of the ADA's structure and function led by an independent academic leader.</p>
+</div>
+
+<h2 id="suspends">What the boycott actually suspends</h2>
+<p class="sub">And why counting roles is the point</p>
+
+<p>Signatories are withdrawing from ADA meeting planning and attendance, including the 2027 Scientific Sessions; from Board-led activity on the New Orleans investigation; and from presentations, fundraisers, grant reviews, manuscript reviews, journal management, manuscript submissions and position statements.</p>
+
+<div class="pull">Every role counted on this page is work the ADA no longer has. The committee seats, editorial positions and review panels below are not credentials. They are the labour now suspended.</div>
+
+<div class="recap">
+  <div class="r"><span class="rn">1,178</span><span class="rc">signatories</span></div>
+  <div class="r"><span class="rn">571</span><span class="rc">ADA members, stated or confirmed</span></div>
+  <div class="r"><span class="rn">205</span><span class="rc">hold a named leadership role</span></div>
+  <div class="r"><span class="rn">118</span><span class="rc">on ADA committees and councils</span></div>
+  <div class="r"><span class="rn">96</span><span class="rc">in ADA journal editorial roles</span></div>
+  <div class="r"><span class="rn">65</span><span class="rc">grant reviewers or ADA-funded</span></div>
+</div>
+
+<p>That is why the annotation matters. A list of 1,178 names says one thing. A list showing that it includes the people who chair the committees, edit the journals and sit on the grant panels says something considerably harder to answer.</p>
+
+<h2 id="ada-roles">ADA roles documented so far</h2>
+<p class="sub">Counted where a signatory appears in the category at all; one person can appear in several</p>
+
+<div class="scroll">
+<table>
+  <caption>Of 1,178 signatories</caption>
+  <thead><tr><th>Role</th><th class="n">Signatories</th></tr></thead>
+  <tbody>
+    <tr><td>ADA member (confirmed or stated)<div class="bar"><i style="width:100%"></i></div></td><td class="n">571</td></tr>
+    <tr><td>Committee or council service<div class="bar"><i style="width:20.7%"></i></div></td><td class="n">118</td></tr>
+    <tr><td>Journal editorial role<div class="bar"><i style="width:16.8%"></i></div></td><td class="n">96</td></tr>
+    <tr><td>Grant reviewer or ADA-funded<div class="bar"><i style="width:11.4%"></i></div></td><td class="n">65</td></tr>
+    <tr><td>Volunteer, advocacy or donor<div class="bar"><i style="width:6.48%"></i></div></td><td class="n">37</td></tr>
+    <tr><td>Award recipient<div class="bar"><i style="width:6.3%"></i></div></td><td class="n">36</td></tr>
+    <tr><td>National governance or officer<div class="bar"><i style="width:8.23%"></i></div></td><td class="n">47</td></tr>
+    <tr><td>Committee or council leadership<div class="bar"><i style="width:3.5%"></i></div></td><td class="n">20</td></tr>
+    <tr><td>Chapter or affiliate leadership<div class="bar"><i style="width:2.63%"></i></div></td><td class="n">15</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="outside">Standing outside the ADA</h2>
+<p class="sub">Academic and institutional positions held by people on the list</p>
+
+<div class="scroll">
+<table>
+  <thead><tr><th>Position</th><th class="n">Signatories</th></tr></thead>
+  <tbody>
+    <tr><td>Professor at any rank</td><td class="n">258</td></tr>
+    <tr><td>Practising clinician</td><td class="n">564</td></tr>
+    <tr><td>Research scientist</td><td class="n">255</td></tr>
+    <tr><td>Endowed or named chair</td><td class="n">47</td></tr>
+    <tr><td>Centre, institute or programme director</td><td class="n">39</td></tr>
+    <tr><td>Division chief or head</td><td class="n">10</td></tr>
+    <tr><td>Dean or university leadership</td><td class="n">7</td></tr>
+    <tr><td>Department chair or head</td><td class="n">5</td></tr>
+    <tr><td>Leadership in another professional society</td><td class="n">11</td></tr>
+    <tr><td>Elected to a national academy</td><td class="n">7</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="caveat disclaimer">
+  <p><span class="dlabel">Disclaimer:</span>The leadership figures are the weakest on this page. Five department chairs is not a real count of department chairs who signed. It is a count of department chairs whose entry happened to say so. Someone who typed "Provider" is recorded as a clinician and nothing more.</p>
+</div>
+
+<h2 id="directory">How complete is the ADA directory?</h2>
+<p class="sub">A test of the one external source available</p>
+
+<p>Thirty-four signatories have been independently verified against public sources as holding senior academic or ADA positions. Of those, <strong>16 appear in the ADA's public member directory</strong> and 18 do not — and eight of the eighteen are based outside the United States, which a fifty-state directory cannot list at all.</p>
+
+<p>Among the US-based verified names, roughly two in three appear. The ones missing include an ADA award recipient, a former <em>Diabetes Care</em> associate editor, and a past president of another major endocrine society. Absence from the directory is not evidence of non-membership.</p>
+
+<div class="ask" id="correct">
+  <h3>If you signed, you can correct your own entry in one message</h3>
+  <p>The signature form asks for your name and titles and for your ADA affiliations, committees and editorial positions — all in free text, which is why the answers range from a full record to a single word. Nothing about committee service, abstract review, chapter work or grant panels is findable on the open web. If any of the following apply to you and your entry does not say so, send them through the form again:</p>
+  <ul>
+    <li>Board, officer or national governance positions</li>
+    <li>Committee, council, interest group or working group service, and any chair roles</li>
+    <li>Editorial positions at <em>Diabetes</em>, <em>Diabetes Care</em>, <em>Clinical Diabetes</em> or <em>Diabetes Spectrum</em></li>
+    <li>Grant review panels, abstract review, Scientific Sessions planning</li>
+    <li>Awards received, and years of membership</li>
+    <li>Chapter, affiliate or regional roles</li>
+    <li>Your current title and institution</li>
+  </ul>
+  <p style="margin-top:16px"><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScDBQ6ZsqIgm8nnoimIwyS5aIdxguCOGrsBSD4bSOddIdv5yA/viewform">Open the Notice of Boycott form</a></p>
+</div>
+
+
+<h2 id="faq">Questions signatories are asking</h2>
+<p class="sub">Practical guidance for people holding to the boycott</p>
+
+<div class="qa">
+  <h3>What if I get asked to review a manuscript or abstract for the ADA?</h3>
+  <p>Decline, and say why. Silence reads as unavailability; a stated reason is part of the point. One signatory's wording, which you are welcome to use or adapt:</p>
+
+  <blockquote class="tmpl" id="tmpl">
+    <p>Thank you for thinking of me. However, I am supporting the boycott of the American Diabetes Association. I am unable to <span class="slot">[participate in activity]</span> until the ADA leadership agrees to restore full editorial independence of <em>Diabetes Care</em>, the board of directors invites a fully independent review of events of June 5th, ADA leadership takes responsibility for their role in the removal of professional members by armed security, and the organization commits to a policy of freedom of expression and scientific inquiry.</p>
+  </blockquote>
+  <p class="tmplnote"><button type="button" class="copy" data-for="tmpl">Copy this text</button> <span class="hint">Replace the bracketed phrase with the specific request &mdash; review this manuscript, review abstracts, serve on the panel, speak at the session.</span></p>
+
+  <h3>Does the boycott cover anything to do with patient care?</h3>
+  <p>No. What signatories have withdrawn is work for the organisation: ADA meeting planning and attendance, including the 2027 Scientific Sessions; Board-led activity on the New Orleans investigation; and presentations, fundraisers, grant reviews, manuscript reviews, journal management, manuscript submissions and position statements. Clinical care is not part of it.</p>
+</div>
+
+<h2 id="challenges">Open challenges</h2>
+<p class="sub">Questions the Association has not answered</p>
+
+<ul class="chal">
+  <li>
+    <h3>The governing bylaws cannot be found</h3>
+    <p>No current bylaws appear anywhere on the ADA's public site. The Association publishes its <a href="https://diabetes.org/about-us/board-of-directors">Board of Directors</a> and its <a href="https://diabetes.org/about-us/previous-reports-and-financials">Form 990 filings</a>, but not the document that defines how it governs itself. Peer societies do: <a href="https://www.adces.org/about-us/leadership---governance">ADCES</a> and <a href="https://pro.aace.com/about/governing-documents">AACE</a> both post theirs openly. Without the bylaws, members cannot check what procedure applied to the removals and bans, who had authority to impose them, or what appeal exists.</p>
+  </li>
+  <li>
+    <h3>The rule was edited after the fact</h3>
+    <p>The removals were justified under the attendee code of conduct. The Internet Archive shows that page was changed on 6 June 2026 &mdash; the day after &mdash; to add &ldquo;such as protesting&rdquo; to the prohibited-conduct list. Whatever the intent, the version now cited is not the version that was in force on 5 June.</p>
+
+    <figure class="coc">
+      <figcaption>ADA conference code of conduct &mdash; before and after</figcaption>
+      <div class="cocrow">
+        <div class="cocbox">
+          <p class="cocwhen">November 2025</p>
+          <blockquote>&ldquo;Inappropriate conduct, including but not limited to harassment; threatening or unwelcome physical or verbal actions; or disorderly or disruptive conduct, will not be tolerated.&rdquo;</blockquote>
+        </div>
+        <div class="cocbox cocnew">
+          <p class="cocwhen">June 2026 &mdash; added restriction</p>
+          <blockquote>&ldquo;Inappropriate conduct, including but not limited to harassment; threatening or unwelcome physical or verbal actions; or disorderly or disruptive conduct <mark>such as protesting</mark>, will not be tolerated.&rdquo;</blockquote>
+        </div>
+      </div>
+    </figure>
+
+    <p style="margin-top:12px; font-size:14.5px; color:var(--ink-3)"><a href="https://web.archive.org/web/changes/https://professional.diabetes.org/scientific-sessions/ada-conference-policies">Compare the archived versions yourself &rarr;</a></p>
+  </li>
+  <li>
+    <h3>The review answered to the body it was reviewing</h3>
+    <p>The Audit and Governance Committee reports to the Board whose conduct was in question. The Board then conceded it had not read the findings before the Association publicised them.</p>
+  </li>
+  <li>
+    <h3>Membership itself is not verifiable from outside</h3>
+    <p>The only public membership record is an opt-in directory. Tested against signatories independently confirmed to hold ADA roles, it listed fewer than half. Anyone assessing who has withdrawn is working from an undercount, and no complete roster is available to correct it.</p>
+  </li>
+  <li>
+    <h3>Volunteer service leaves no public trace</h3>
+    <p>Committee seats, abstract review, grant panels and chapter work appear in no searchable record. The people who did that work are the only source for it, which is why this page asks signatories directly rather than relying on what can be looked up.</p>
+  </li>
+</ul>
+
+<h2 id="coverage">Coverage and primary sources</h2>
+<p class="sub">Including the ADA's own statements, so readers can weigh both accounts</p>
+
+<h3 class="csub">Primary documents</h3>
+<ul class="srcs">
+  <li><a href="https://diabetesjournals.org/care/article/49/6/901/164764/Misguided-Brushes-of-a-Pen-Continue-to-Dismantle">Misguided Brushes of a Pen Continue to Dismantle&hellip;</a><span class="meta">Diabetes Care &mdash; the editorial being handed out on 5 June, published in the ADA's own journal</span></li>
+  <li><a href="https://zenodo.org/records/21300053">Community Voices: On the Events of the ADA 86th Scientific Sessions</a><span class="meta">Zenodo &mdash; the editorial and seven opinion pieces the ADA refused to publish, in full, with a DOI</span></li>
+  <li><a href="https://web.archive.org/web/changes/https://professional.diabetes.org/scientific-sessions/ada-conference-policies">Internet Archive: changes to the ADA conference policies page</a><span class="meta">Shows &ldquo;protesting&rdquo; added to the code of conduct on 6 June 2026, the day after the removals</span></li>
+  <li><a href="https://diabetes.org/newsroom/press-releases/american-diabetes-association-audit-and-governance-committee-releases">Audit and Governance Committee releases independent review</a><span class="meta">American Diabetes Association press release, 1 September 2026</span></li>
+  <li><a href="https://www.statnews.com/2026/09/01/american-diabetes-association-june-conference-independent-review/">What an independent review says happened at the ADA's June conference</a><span class="meta">CEO Charles Henderson, op-ed in STAT, 1 September 2026</span></li>
+  <li><a href="https://www.youtube.com/watch?v=W7K2j3Rs-Qg">Statement from the American Diabetes Association regarding 2026 Scientific Sessions</a><span class="meta">Video apology from the ADA CEO, 10 June 2026</span></li>
+  <li><a href="https://www.instagram.com/reel/DZNnB7UEpsu/">Video of the removal</a><span class="meta">Recorded at the convention center, 5 June 2026</span></li>
+  <li><a href="https://www.change.org/p/an-open-letter-to-the-american-diabetes-association-shame-on-you">An open letter to the American Diabetes Association</a><span class="meta">Change.org petition, more than 8,000 signatures</span></li>
+</ul>
+
+<h3 class="csub">The boycott &mdash; September 2026</h3>
+<ul class="srcs">
+  <li><a href="https://www.bmj.com/lookup/doi/10.1136/bmj-2026-100925">Diabetes researchers launch boycott of the American Diabetes Association</a><span class="meta">The BMJ, September 2026</span></li>
+  <li><a href="https://www.statnews.com/2026/09/11/health-news-boycott-launched-against-ada-includes-journal/">Boycott launched against ADA, includes its journal</a><span class="meta">STAT, 11 September 2026</span></li>
+  <li><a href="https://www.healio.com/news/endocrinology/20260911/diabetes-leaders-announce-ada-boycott-after-investigation-of-meeting-ejections">Diabetes leaders announce ADA boycott after investigation of meeting ejections</a><span class="meta">Healio, 11 September 2026</span></li>
+  <li><a href="https://retractionwatch.com/2026/09/14/american-diabetes-association-boycott-diabetes-care-protest/">Diabetes Care editors halt manuscript review as the boycott reaches the journal</a><span class="meta">Retraction Watch, 14 September 2026</span></li>
+  <li><a href="https://meetings.skift.com/2026/09/16/boycott-puts-american-diabetes-association-meeting-under-pressure/">Boycott puts American Diabetes Association meeting under pressure</a><span class="meta">Skift Meetings, 16 September 2026 &mdash; on the effect on the 2027 Scientific Sessions</span></li>
+  <li><a href="https://www.medpagetoday.com/endocrinology/diabetes/122977">Coverage of the boycott</a><span class="meta">MedPage Today, September 2026</span></li>
+  <li><a href="https://www.fiercebiotech.com/research/scientists-boycott-american-diabetes-association-fallout-june-conference-fracas-escalates">Scientists boycott the American Diabetes Association as fallout escalates</a><span class="meta">Fierce Biotech, September 2026</span></li>
+</ul>
+
+<h3 class="csub">Support from the wider field</h3>
+<ul class="srcs">
+  <li><a href="https://link.springer.com/article/10.1007/s00125-026-06860-w">Statement in Diabetologia (1 of 3)</a><span class="meta">Diabetologia &mdash; European colleagues on the events and their consequences</span></li>
+  <li><a href="https://link.springer.com/article/10.1007/s00125-026-06868-2">Statement in Diabetologia (2 of 3)</a><span class="meta">Diabetologia</span></li>
+  <li><a href="https://link.springer.com/article/10.1007/s00125-026-06861-9">Statement in Diabetologia (3 of 3)</a><span class="meta">Diabetologia</span></li>
+  <li><a href="https://www.thelancet.com/journals/landia/article/PIIS2213-8587(26)00161-0/fulltext">On the ADA controversy</a><span class="meta">The Lancet Diabetes &amp; Endocrinology</span></li>
+</ul>
+
+<h3 class="csub">The internal review and how it was announced &mdash; September 2026</h3>
+<ul class="srcs">
+  <li><a href="https://www.statnews.com/2026/09/01/ada-members-review-june-expulsion-denies-censoring-opinions-calling-new-orleans-police/">ADA review of members' expulsion denies group censored opinions, called in police</a><span class="meta">STAT, 1 September 2026</span></li>
+  <li><a href="https://www.medpagetoday.com/special-reports/features/122872">On the &ldquo;final report&rdquo;</a><span class="meta">MedPage Today, September 2026</span></li>
+  <li><a href="https://www.statnews.com/2026/09/06/ada-diabetes-association-ejection-conference-review-not-final/">The review was not final after all</a><span class="meta">STAT, 6 September 2026 &mdash; the Board concedes it had not read the findings it publicised</span></li>
+  <li><a href="https://www.bmj.com/content/394/bmj-2026-100475">News coverage of the controversy</a><span class="meta">The BMJ</span></li>
+</ul>
+
+<h3 class="csub">Blocked publication and editorial independence &mdash; July 2026</h3>
+<ul class="srcs">
+  <li><a href="https://www.statnews.com/2026/07/16/american-diabetes-association-annual-conference-controversy-continues/">Fresh turmoil roils American Diabetes Association</a><span class="meta">STAT, 16 July 2026 &mdash; on the blocked journal pieces</span></li>
+  <li><a href="https://arstechnica.com/science/2026/07/troubling-new-details-emerge-on-diabetes-ouster-controversy/">Troubling new details emerge on diabetes ouster controversy</a><span class="meta">Ars Technica, July 2026 &mdash; the one report that worked through all the blocked preprints</span></li>
+  <li><a href="https://www.statnews.com/2026/07/28/american-diabetes-association-fallout-researchers-expulsion/">ADA, facing calls for resignations, asks for patience</a><span class="meta">STAT, 28 July 2026</span></li>
+  <li><a href="https://www.statnews.com/2026/07/31/american-diabetes-association-ada-police-apology-independence/">We once praised the ADA's courage. How things have changed</a><span class="meta">Adam Marcus and Ivan Oransky of Retraction Watch, in STAT, 31 July 2026</span></li>
+  <li><a href="https://conscienhealth.org/2026/07/01/american-diabetes-association-the-stain-that-will-not-fade/">The stain that will not fade</a><span class="meta">ConscienHealth, 1 July 2026</span></li>
+  <li><a href="https://www.bmj.com/content/393/bmj-2026-327847">Coverage in The BMJ</a><span class="meta">The BMJ</span></li>
+</ul>
+
+<h3 class="csub">The removals &mdash; June 2026</h3>
+<ul class="srcs">
+  <li><a href="https://www.medpagetoday.com/special-reports/exclusives/121619">Police tussle with diabetes experts at ADA meeting</a><span class="meta">MedPage Today, 5 June 2026 &mdash; broke the story and published the video</span></li>
+  <li><a href="https://www.nytimes.com/2026/06/05/well/ada-conference-diabetes-trump.html?unlocked_article_code=1.n1A.e8PU.qES6Thaje3We&amp;smid=url-share">Police Remove Diabetes Experts From Conference for Distributing Critique of Trump Administration</a><span class="meta">The New York Times, 5 June 2026</span></li>
+  <li><a href="https://www.washingtonpost.com/health/2026/06/05/diabetes-researchers-ousted-conference-after-criticizing-trump/">Diabetes researchers ousted from conference after criticizing Trump</a><span class="meta">The Washington Post, 5 June 2026</span></li>
+  <li><a href="https://www.science.org/content/article/diabetes-society-officials-resign-after-removal-trump-protestors-conference">Diabetes society officials resign after removal of protestors from conference</a><span class="meta">Science, June 2026</span></li>
+  <li><a href="https://www.medpagetoday.com/special-reports/exclusives/121657">Leaders resign from ADA after experts booted from meeting</a><span class="meta">MedPage Today, 8 June 2026</span></li>
+  <li><a href="https://www.statnews.com/2026/06/10/ada-annual-convention-ceo-apology-protester-removal/">Diabetes association leader apologizes for expulsion of members</a><span class="meta">STAT, 10 June 2026</span></li>
+  <li><a href="https://www.fire.org/news/american-diabetes-association-ejects-researchers-conference-sharing-editorial-its-own-journal">ADA ejects researchers for sharing an editorial from its own journal</a><span class="meta">Foundation for Individual Rights and Expression, 10 June 2026</span></li>
+  <li><a href="https://www.healio.com/news/endocrinology/20260616/ada-leader-apologizes-to-members-removed-from-meeting-broader-diabetes-community">Diabetes community reacts to incident at ADA Scientific Sessions</a><span class="meta">Healio, 16 June 2026</span></li>
+  <li><a href="https://conscienhealth.org/2026/06/06/a-rocky-start-to-ada-scientific-sessions/">A rocky start to ADA Scientific Sessions</a><span class="meta">ConscienHealth, 6 June 2026</span></li>
+  <li><a href="https://www.celinegounder.com/p/ada-removal-nih-cuts-diabetes-research">The ADA removal, NIH cuts, and diabetes research</a><span class="meta">Celine Gounder</span></li>
+</ul>
+
+<footer>
+  <p><span class="dlabel">Disclaimer:</span>Aggregate figures only. No signatory is named on this page. Individual entries were submitted for the Notice of Boycott, not for publication, and are not reproduced here.</p>
+  <p>Sources: the merged signatory list, the ADA's public member directory, and named public sources for each individually verified entry. Method notes and per-row evidence live with the dataset.</p>
+  <p>Background drawn from the <a href="https://docs.google.com/forms/d/e/1FAIpQLScDBQ6ZsqIgm8nnoimIwyS5aIdxguCOGrsBSD4bSOddIdv5yA/viewform">Notice of Boycott of the American Diabetes Association</a>, dated 9 September 2026, which is also where new signatures and corrected entries are collected.</p>
+  <p style="margin-top:14px; font-family:var(--serif); font-size:17px; color:var(--ink-2)">Restore the trust. Restore the mission.</p>
+</footer>
+
+</div>
+<script>
+(function(){
+  var d = document.querySelector('.jump');
+  if(!d) return;
+  d.querySelectorAll('nav a').forEach(function(a){
+    a.addEventListener('click', function(){ d.removeAttribute('open'); });
+  });
+  document.addEventListener('click', function(e){
+    if(d.hasAttribute('open') && !d.contains(e.target)) d.removeAttribute('open');
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') d.removeAttribute('open');
+  });
+})();
+(function(){
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var src = document.getElementById(btn.getAttribute('data-for'));
+      if(!src) return;
+      var txt = src.innerText.replace(/\s+/g,' ').trim();
+      var done = function(){
+        var was = btn.textContent;
+        btn.textContent = 'Copied'; btn.setAttribute('data-done','');
+        setTimeout(function(){ btn.textContent = was; btn.removeAttribute('data-done'); }, 1800);
+      };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(done, function(){ fallback(txt, done); });
+      } else { fallback(txt, done); }
+    });
+  });
+  function fallback(txt, done){
+    var t = document.createElement('textarea');
+    t.value = txt; t.setAttribute('readonly','');
+    t.style.cssText = 'position:absolute;left:-9999px';
+    document.body.appendChild(t); t.select();
+    try { document.execCommand('copy'); done(); } catch(e){}
+    document.body.removeChild(t);
+  }
+})();
+</script>
+</body>
+</html>
