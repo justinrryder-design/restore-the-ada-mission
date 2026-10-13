@@ -255,6 +255,7 @@ if WRITE:
     if cur:
         prev = int(cur.group(1).replace(',', ''))
         C['previous_total'] = prev
+        print(f'previous_total         {prev}   (change {C["total"] - prev:+d})')
         if abs(C['total'] - prev) > A.max_change and not A.force:
             print(f'REFUSED: total would move {prev} -> {C["total"]} '
                   f'(more than {A.max_change}). Page not changed.')
