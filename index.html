@@ -331,6 +331,48 @@ a:hover{text-decoration-thickness:2px}
 }
 footer{margin-top:60px; padding-top:22px; border-top:1px solid var(--line); font-size:14.5px; line-height:1.55; color:var(--ink-2)}
 footer p{max-width:66ch; margin:0 0 9px}
+
+/* ---- Latest card (top right): newest coverage, picture + link ---- */
+.newscard{
+  float:right; width:292px; margin:4px 0 20px 28px;
+  background:var(--surface); border:1px solid var(--line);
+  border-top:3px solid var(--accent); border-radius:11px; padding:15px 17px 15px
+}
+.nclabel{
+  font-size:11.5px; letter-spacing:.12em; text-transform:uppercase;
+  font-weight:600; color:var(--accent); margin:0 0 11px
+}
+.ncvid{
+  position:relative; display:block; border-radius:7px; overflow:hidden;
+  margin:0 0 12px; background:var(--line-soft)
+}
+.ncvid img{display:block; width:100%; height:auto; aspect-ratio:16/9; object-fit:cover}
+.ncplay{
+  position:absolute; inset:0; margin:auto; width:44px; height:44px;
+  border-radius:50%; background:rgba(16,19,24,.72)
+}
+.ncplay::after{
+  content:""; position:absolute; top:50%; left:55%; transform:translate(-50%,-50%);
+  border-style:solid; border-width:8.5px 0 8.5px 14px;
+  border-color:transparent transparent transparent #fff
+}
+.newscard .nctitle{margin:0; font-size:15px; line-height:1.38; font-weight:550; max-width:none}
+.newscard .nctitle a{color:var(--ink); text-decoration-thickness:1px}
+.newscard .ncmeta{margin:4px 0 0; font-size:12.5px; line-height:1.45; color:var(--ink-3); max-width:none}
+.newscard .ncitem + .ncitem{margin-top:13px; padding-top:13px; border-top:1px solid var(--line-soft)}
+/* Keep the centred CTA and summary off the float, so neither is squeezed. */
+.cta{clear:right}
+@media (max-width:760px){
+  .newscard{float:none; width:auto; margin:22px 0 4px}
+  /* On phones the lede explains the page; let it come before the card. */
+  header{display:flex; flex-direction:column}
+  header h1{order:1} header .lede{order:2} header .cta{order:3}
+  header .newscard{order:4} header .summary{order:5} header .stamp{order:6}
+}
+@media print{
+  .newscard{float:none; width:auto; break-inside:avoid}
+  .ncvid, .ncplay{display:none}
+}
 </style>
 </head>
 <body>
@@ -363,6 +405,21 @@ footer p{max-width:66ch; margin:0 0 9px}
 
 <header>
   <h1>Boycott of the American Diabetes Association &mdash; Tracker</h1>
+  <aside class="newscard" aria-label="Latest coverage">
+    <p class="nclabel">Latest</p>
+    <div class="ncitem">
+      <a class="ncvid" href="https://www.youtube.com/watch?v=9UgAbjB5SWo" aria-label="Watch: interview with a boycott signatory">
+        <img src="https://img.youtube.com/vi/9UgAbjB5SWo/hqdefault.jpg" alt="" width="480" height="360" onerror="this.style.display='none'">
+        <span class="ncplay" aria-hidden="true"></span>
+      </a>
+      <p class="nctitle"><a href="https://www.youtube.com/watch?v=9UgAbjB5SWo">Interview with a boycott signatory</a></p>
+      <p class="ncmeta">Video &mdash; YouTube</p>
+    </div>
+    <div class="ncitem">
+      <p class="nctitle"><a href="https://www.statnews.com/2026/10/21/american-diabetes-association-leadership-change-controversy/">Another diabetes association leader is out while review continues</a></p>
+      <p class="ncmeta">STAT, 21 October 2026 &mdash; Elizabeth Cooney</p>
+    </div>
+  </aside>
   <p class="lede">1,178 people have signed the Notice of Boycott of the American Diabetes Association. This page reports, in aggregate, what they hold within the ADA and what they lead outside it &mdash; and what the Association loses for as long as the boycott holds.</p>
   <p class="cta"><a class="btn btn-lg" href="https://docs.google.com/forms/d/e/1FAIpQLScDBQ6ZsqIgm8nnoimIwyS5aIdxguCOGrsBSD4bSOddIdv5yA/viewform">Read and sign the Notice of Boycott</a></p>
   <div class="summary">
@@ -386,6 +443,10 @@ footer p{max-width:66ch; margin:0 0 9px}
 <h2 id="updates" style="border-top:none; padding-top:0">Updates</h2>
 
 <ul class="log">
+  <li>
+    <p class="when">21 October 2026 &mdash; the ADA's chief scientific and medical officer is out</p>
+    <p class="what">Rita Kalyani is &ldquo;no longer in her role, effective immediately,&rdquo; the ADA said, with no explanation given while the review of the June expulsions remains unfinished. Joshua Neumiller, senior vice president of medical affairs, takes on added responsibilities. A spokesperson said the review is &ldquo;still underway.&rdquo; <a href="https://www.statnews.com/2026/10/21/american-diabetes-association-leadership-change-controversy/">STAT, 21 October 2026.</a></p>
+  </li>
   <li>
     <p class="when">6 October 2026 &mdash; the ADA's own journal speaks</p>
     <p class="what"><em>Diabetes</em> published an editorial by its editor-in-chief and two letters to the ADA Board, one signed by D'Alessio and 23 colleagues and one by members of the Pathway to Stop Diabetes mentor committee. <a href="#journals">Links below.</a></p>
@@ -584,6 +645,8 @@ footer p{max-width:66ch; margin:0 0 9px}
 
 <h3 class="csub">The boycott &mdash; September and October 2026</h3>
 <ul class="srcs">
+  <li><a href="https://www.statnews.com/2026/10/21/american-diabetes-association-leadership-change-controversy/">Another diabetes association leader is out while review continues</a><span class="meta">STAT, 21 October 2026 &mdash; Elizabeth Cooney, on the departure of the ADA's chief scientific and medical officer</span></li>
+  <li><a href="https://www.youtube.com/watch?v=9UgAbjB5SWo">Interview with a boycott signatory</a><span class="meta">Video &mdash; YouTube</span></li>
   <li><a href="https://www.medpagetoday.com/opinion/second-opinions/123301">Opinion by Elizabeth Selvin</a><span class="meta">MedPage Today, Second Opinions</span></li>
   <li><a href="https://www.statnews.com/2026/09/11/health-news-boycott-launched-against-ada-includes-journal/">Boycott launched against ADA, includes its journal</a><span class="meta">STAT, 11 September 2026</span></li>
   <li><a href="https://www.healio.com/news/endocrinology/20260911/diabetes-leaders-announce-ada-boycott-after-investigation-of-meeting-ejections">Diabetes leaders announce ADA boycott after investigation of meeting ejections</a><span class="meta">Healio, 11 September 2026</span></li>
